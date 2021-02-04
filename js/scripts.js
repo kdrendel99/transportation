@@ -1,16 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function(){
-  $("form#transportation_survey").submit(function(event){
+  $("form#fortune-teller").submit(function(event){
     event.preventDefault();
-    $("#work-responses").show();
-    $("input:checkbox[name=work-transportation]:checked").each(function(){
+    $("#fortune1").show();
+    $("input:checkbox[name=option1]:checked").each(function(){
       const workTransportationMode = $(this).val();
-      $('#work-responses').append(workTransportationMode + "<br>");
+      $('#fortune1').append(workTransportationMode + "<br>");
     });
-    $("#fun-responses").show();
-    $("input:checkbox[name=fun-transportation]:checked").each(function(){
+    $("#fortune2").show();
+    $("input:checkbox[name=option2]:checked").each(function(){
       const funTransportationMode = $(this).val();
-      $('#fun-responses').append(funTransportationMode + "<br>");
+      $('#fortune2').append(funTransportationMode + "<br>");
     });
-    $('#transportation_survey').hide();
+    $('#fortune-teller').hide();
   });
 });

@@ -1,8 +1,8 @@
-#work-responses {
+#bad {
   display: none;
 }
 
-#fun-responses {
+#good {
   display: none;
 }
 h2 {
@@ -10,10 +10,22 @@ h2 {
   color: white;
   text-shadow: 4px;
 }
+.moon {
+  text-align: center;
+}
 body {
-text-align: center;
-background-color: lightblue;
+color: gold;
+background-color: #8308DF;
 }
 cursor {
   hover: pointer;
 }
+
+#fortune1 {
+  display: none;
+}
+
+#fortune2 {
+  display: none; 
+}
+
